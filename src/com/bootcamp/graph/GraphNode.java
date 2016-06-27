@@ -20,7 +20,7 @@ public class GraphNode {
         if (this == node || this.neighbours.contains(node))
             return true;
         for (GraphNode n : this.neighbours) {
-            if( n.canReach(node)) return true;
+            if (n.canReach(node)) return true;
         }
         return false;
     }
